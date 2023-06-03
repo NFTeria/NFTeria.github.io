@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NFTeria Inc - Empowering Small Investors Through AI-Driven Trading Insights</title>
+    <title>NFTeria Inc. - Empowering Small Investors Through AI-Driven Trading Insights</title>
     <meta name="description"
         content="NFTeria Inc is a fintech software development company specializing in AI and ML solutions for time series forecasting and web development.">
 
@@ -43,35 +43,40 @@
         <p class="lead main-text">Driving Fintech Innovation with AI/ML</p>
     </header>
 
-<main class="container mt-3">
-    <div class="card mb-3">
-        <div class="card-header header-text">
-            <h2>About Us</h2>
+    <main class="container mt-3">
+        <div class="card mb-3">
+            <div class="card-header header-text">
+                <h2>About Us</h2>
+            </div>
+            <div class="card-body main-text" style="max-height: 300px; overflow-y: auto;">
+                <p>Welcome to NFTeria's GitHub Pages. We are a leading fintech software development company that
+                    specializes
+                    in integrating artificial intelligence (AI) and machine learning (ML) into our solutions for time
+                    series
+                    forecasting and web development. With a specific focus on the dynamic and evolving field of
+                    non-fungible
+                    token (NFT) technology, we are pushing the boundaries of digital asset management.</p>
+
+                <p>Our innovative solutions are designed to help businesses and individuals unlock the full potential of
+                    the
+                    digital economy. We strive to provide our clients with advanced forecasting tools, sophisticated web
+                    applications, and blockchain solutions to stay ahead in the fast-paced world of fintech.</p>
+
+                <p>With a strong foundation in blockchain technology, we have established ourselves as a trusted partner
+                    for
+                    enterprises seeking to navigate the complexities of the blockchain ecosystem. Our team of dedicated
+                    professionals works tirelessly to ensure our products not only meet but exceed our clients'
+                    expectations.</p>
+
+                <p>Our commitment to innovation and excellence sets us apart in the fintech industry. We invite you to
+                    join
+                    us on this exciting journey as we continue to drive the digital economy forward.</p>
+            </div>
         </div>
-        <div class="card-body main-text" style="max-height: 300px; overflow-y: auto;">
-            <p>Welcome to NFTeria's GitHub Pages. We are a leading fintech software development company that specializes
-                in integrating artificial intelligence (AI) and machine learning (ML) into our solutions for time series
-                forecasting and web development. With a specific focus on the dynamic and evolving field of non-fungible
-                token (NFT) technology, we are pushing the boundaries of digital asset management.</p>
-
-            <p>Our innovative solutions are designed to help businesses and individuals unlock the full potential of the
-                digital economy. We strive to provide our clients with advanced forecasting tools, sophisticated web
-                applications, and blockchain solutions to stay ahead in the fast-paced world of fintech.</p>
-
-            <p>With a strong foundation in blockchain technology, we have established ourselves as a trusted partner for
-                enterprises seeking to navigate the complexities of the blockchain ecosystem. Our team of dedicated
-                professionals works tirelessly to ensure our products not only meet but exceed our clients'
-                expectations.</p>
-
-            <p>Our commitment to innovation and excellence sets us apart in the fintech industry. We invite you to join
-                us on this exciting journey as we continue to drive the digital economy forward.</p>
-        </div>
-    </div>
-</main>
+    </main>
 
 
 <div class="card mb-3">
-                <div class="btcwdgt-news" bw-cur="eur" bw-theme="light"></div>
     <div class="card-header header-text" style="max-height: 300px; overflow-y: auto;">
         <h2>Latest News</h2>
     </div>
@@ -98,34 +103,34 @@
             <li><a href="https://blockworks.co/category/defi" target="_blank">DeFi</a></li>
         </ul>
     </div>
-</div>
+    </div>
 
 
 
-        <div class="card mb-3">
-            <div class="card-header header-text">
-                <h2>Links</h2>
-            </div>
-            <div class="card-body main-text">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/rensley-2-nfty/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/doble196" target="_blank">GitHub</a></li>
-                </ul>
-            </div>
+    <div class="card mb-3">
+        <div class="card-header header-text">
+            <h2>Links</h2>
         </div>
-
-
-
-        <div class="card mb-3">
-            <div class="card-header header-text">
-                <h2>Schedule a Meeting</h2>
-            </div>
-            <div class="card-body">
-                <div class="calendly-inline-widget" data-url="https://calendly.com/nfteria/rensley"
-                    style="min-width:320px;height:580px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-            </div>
+        <div class="card-body main-text">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rensley-2-nfty/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/doble196" target="_blank">GitHub</a></li>
+            </ul>
         </div>
+    </div>
+
+
+
+    <div class="card mb-3">
+        <div class="card-header header-text">
+            <h2>Schedule a Meeting</h2>
+        </div>
+        <div class="card-body">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/nfteria/rensley"
+                style="min-width:320px;height:580px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        </div>
+    </div>
     </main>
 
     <footer class="footer">
@@ -134,31 +139,30 @@
             document.write('<p>Copyright &copy; ' + currentYear + ' NFTeria Inc. All rights reserved.</p>');
 
             function getWeather() {
-                        if (navigator.geolocation) {
-                            navigator.geolocation.getCurrentPosition(position => {
-                                fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=YOUR_OPEN_WEATHER_API_KEY`)
-                                    .then(response => response.json())
-                                    .then(data => {
-                                        document.getElementById('weather').innerHTML = `Temperature: ${Math.round(data.main.temp - 273.15)}°C, ${data.weather[0].description}`;
-                                    });
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(position => {
+                        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=YOUR_OPEN_WEATHER_API_KEY`)
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById('weather').innerHTML = `Temperature: ${Math.round(data.main.temp - 273.15)}°C, ${data.weather[0].description}`;
                             });
-                        } else {
-                            document.getElementById('weather').innerHTML = "Geolocation is not supported by this browser.";
-                        }
-                    }
-                </script>
-        </footer>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            (function (b, i, t, C, O, I, N) {
-                window.addEventListener('load', function () {
-                    if (b.getElementById(C)) return;
-                    I = b.createElement(i), N = b.getElementsByTagName(i)[0];
-                    I.src = t; I.id = C; N.parentNode.insertBefore(I, N);
-                }, false)
-            })(document, 'script', 'https://widgets.bitcoin.com/widget.js', 'btcwdgt');
+                    });
+                } else {
+                    document.getElementById('weather').innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
         </script>
-        </body>
-        
-        </html>
-     
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        (function (b, i, t, C, O, I, N) {
+            window.addEventListener('load', function () {
+                if (b.getElementById(C)) return;
+                I = b.createElement(i), N = b.getElementsByTagName(i)[0];
+                I.src = t; I.id = C; N.parentNode.insertBefore(I, N);
+            }, false)
+        })(document, 'script', 'https://widgets.bitcoin.com/widget.js', 'btcwdgt');
+    </script>
+</body>
+
+</html>
