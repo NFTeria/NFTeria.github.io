@@ -138,20 +138,6 @@
         <script>
             var currentYear = new Date().getFullYear();
             document.write('<p>Copyright &copy; ' + currentYear + ' NFTeria Inc. All rights reserved.</p>');
-
-            function getWeather() {
-                if (navigator.geolocation) {
-                    navigator.geolocation.getCurrentPosition(position => {
-                        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=YOUR_OPEN_WEATHER_API_KEY`)
-                            .then(response => response.json())
-                            .then(data => {
-                                document.getElementById('weather').innerHTML = `Temperature: ${Math.round(data.main.temp - 273.15)}°C, ${data.weather[0].description}`;
-                            });
-                    });
-                } else {
-                    document.getElementById('weather').innerHTML = "Geolocation is not supported by this browser.";
-                }
-            }
         </script>
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
