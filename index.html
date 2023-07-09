@@ -11,18 +11,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #F0ECE7;
-            /* eggshell background */
+            background-color: #98FF98; /* bright mint color */
         }
 
         .header-text {
-            color: #00d969;
-            /* lime green color */
+            color: #15317E; /* yankee blue color */
         }
 
         .main-text {
-            color: #2b5ae9;
-            /* bright blue color */
+            color: #000080; /* navy color */
         }
 
         .footer {
@@ -34,11 +31,19 @@
             color: black;
             text-align: center;
         }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: #98FF98;
+            padding: 50px 0;
+            transition: padding 0.5s;
+        }
     </style>
 </head>
 
 <body>
-    <header class="container mt-3">
+    <header class="container mt-3 sticky">
         <h1 class="header-text">NFTeria Inc.</h1>
         <p class="lead main-text">Driving Fintech Innovation with AI/ML</p>
     </header>
@@ -136,20 +141,12 @@
 
     <footer class="footer">
         <script>
-            var currentYear = new Date().getFullYear();
-            document.write('<p>Copyright &copy; ' + currentYear + ' NFTeria Inc. All rights reserved.</p>');
+            var currentDate = new Date();
+            var dateString = currentDate.toDateString(); 
+            document.write('<p>Copyright &copy; ' + dateString + ' NFTeria Inc. All rights reserved.</p>');
         </script>
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        (function (b, i, t, C, O, I, N) {
-            window.addEventListener('load', function () {
-                if (b.getElementById(C)) return;
-                I = b.createElement(i), N = b.getElementsByTagName(i)[0];
-                I.src = t; I.id = C; N.parentNode.insertBefore(I, N);
-            }, false)
-        })(document, 'script', 'https://widgets.bitcoin.com/widget.js', 'btcwdgt');
-    </script>
 </body>
 
 </html>
